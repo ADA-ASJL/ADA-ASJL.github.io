@@ -3,10 +3,10 @@
   <channel>
     <title>Jekyll-Uno</title>
     <description>Jekyll-Uno - a minimal, responsive theme for Jekyll</description>
-    <link>http://localhost:4444/jekyll-uno/</link>
-    <atom:link href="http://localhost:4444/jekyll-uno/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 13 Dec 2018 14:10:36 +0100</pubDate>
-    <lastBuildDate>Thu, 13 Dec 2018 14:10:36 +0100</lastBuildDate>
+    <link>http://localhost:4444//</link>
+    <atom:link href="http://localhost:4444//feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 14 Dec 2018 14:13:41 +0100</pubDate>
+    <lastBuildDate>Fri, 14 Dec 2018 14:13:41 +0100</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Fri, 08 Jan 2016 16:04:23 +0100</pubDate>
-        <link>http://localhost:4444/jekyll-uno/2016/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://localhost:4444/jekyll-uno/2016/welcome-to-jekyll/</guid>
+        <link>http://localhost:4444//2016/welcome-to-jekyll/</link>
+        <guid isPermaLink="true">http://localhost:4444//2016/welcome-to-jekyll/</guid>
         
         <category>jekyll</category>
         
