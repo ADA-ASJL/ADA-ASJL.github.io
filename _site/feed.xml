@@ -3,37 +3,198 @@
   <channel>
     <title>Twitter trolls strategy to disrupt democracy</title>
     <description>Applied Data Analysis EPFL</description>
-    <link>http://localhost:4444//</link>
-    <atom:link href="http://localhost:4444//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 14 Dec 2018 20:01:42 +0100</pubDate>
-    <lastBuildDate>Fri, 14 Dec 2018 20:01:42 +0100</lastBuildDate>
+    <link>http://localhost:4444/jekyll-uno/</link>
+    <atom:link href="http://localhost:4444/jekyll-uno/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sat, 15 Dec 2018 22:26:38 +0100</pubDate>
+    <lastBuildDate>Sat, 15 Dec 2018 22:26:38 +0100</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
     
       <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;Social media went from exciting to being ingrained in our societies and its influence exceeded the personal sphere to attain even our legal framework and political institutions. The question of regulating social networks is currently a hot topic especially with the rise of the concept of cyber warfare and what that entails in terms of disruption and propaganda. It is therefore very important to study how social media can be used to create narratives and tip the scales into one way or the other. In particular, the Internet Research Agency, a Russian troll factory was accused of interfering in multiple foreign political processes like the the 2016 US presidential elections. We dispose of a dataset of roughly 3 millions tweets spanned between 2012 and 2018 related to accounts of this agency. The aim is to understand what these tweets focus on and how do they adapt with respect to major political and politically divisive events.&lt;/p&gt;
+        <title>Data Story</title>
+        <description>&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Social media went from exciting to being ingrained in our societies and its influence exceeded the personal sphere to attain even our legal framework and political institutions. The question of regulating social networks is currently a hot topic especially with the rise of the concept of cyber warfare and what that entails in terms of disruption and propaganda. It is therefore very important to study how social media can be used to create narratives and tip the scales into one way or the other. In particular, the Internet Research Agency, a Russian troll factory was accused of interfering in multiple foreign political processes like the the 2016 US presidential elections. We dispose of a dataset of roughly 3 millions tweets spanned between 2012 and 2018 related to accounts of this agency. The aim is to understand what these tweets focus on and how do they adapt with respect to major political and politically divisive events.&lt;/p&gt;
 
-&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve --watch&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+&lt;h2 id=&quot;dataset&quot;&gt;Dataset&lt;/h2&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;h2 id=&quot;methodology&quot;&gt;Methodology&lt;/h2&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;h2 id=&quot;general-analysis&quot;&gt;General Analysis&lt;/h2&gt;
 
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Looking at the first Russian troll twitter data, we find 2772 user accounts all linked to the IRA. Among all the authors only 119 are responsible for roughly half of the tweets and there a few users with a large number of tweets. &lt;br /&gt;
+What is interesting to see here is that 3 authors from the top 6 authors are dedicated to talking about news and the top author of the data is categorized as a Commercial account. This shows that the operation is sophisticated in the sense that trolls try to play both sides right and left but also put the hat of the news media, commercial outlets and other more casual categories to blend into the public and engage them into reacting and following a carefully selected set of events.&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/jekyll-uno/images/authors_count.png&quot; alt=&quot;Authors&quot; /&gt;&lt;/p&gt;
 
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Authors&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;N° Tweets&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Accouny_category&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;EXQUOTE&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;59652&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Commercial&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;SCREAMYMONKEY&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;44041&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;NewsFeed&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;WORLDNEWSPOLI&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;36974&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;RightTroll&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;AMELIEBALDWIN&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;35371&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;RightTroll&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;TODAYPITTSBURGH&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;33602&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;NewsFeed&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;SPECIALAFFAIR&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;32588&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;NewsFeed&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;img src=&quot;/jekyll-uno/images/languages.png&quot; alt=&quot;Languages&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The proportion of English tweets is  71.83346481101199
+The proportion of Russian tweets is  20.72812544412336
+The number of languages figuring in the dataset is 56&lt;/p&gt;
+
+&lt;p&gt;Nore than 92% of the tweets are in English or Russian. We will therefore restrict further analysis to only the tweets in English. It’s interesting to see that the IRA uses a large number of languages in its disruptive process.
+English New dataset size is (2092539, 16)&lt;/p&gt;
+
+&lt;p&gt;account_category
+Commercial      113256
+Fearmonger       10855
+HashtagGamer    216048
+LeftTroll       413711
+NewsFeed        597656
+NonEnglish       27632
+RightTroll      706120
+Unknown           7261&lt;/p&gt;
+
+&lt;p&gt;Right and Left troll New dataset size is (1119831, 15)&lt;/p&gt;
+
+&lt;h2 id=&quot;tweet-activity&quot;&gt;Tweet Activity&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/jekyll-uno/images/monthly.png&quot; alt=&quot;Monthly&quot; /&gt;
+&lt;img src=&quot;/jekyll-uno/images/daily.png&quot; alt=&quot;Daily&quot; /&gt;
+&lt;img src=&quot;/jekyll-uno/images/hourly.png&quot; alt=&quot;Hourly&quot; /&gt;
+&lt;img src=&quot;/jekyll-uno/images/different.png&quot; alt=&quot;Different&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After the compaign at any hour of the day the number of tweets is higher than the maximum hourly number of tweets during the compaign. The same applies to during the compaign and before it. This is actually very insightfull. It means the IRA was much less interested in interfering with the political process before Donald Trump announced his candidacy. Then when he did, they strongly increased the tweeting frequency until he won. After the elections, the IRA was even more interested in compromising the public opinion. Of course, this is only an approximation since we don’t have the logs of all the IRA’s activity but this is a good indicator that they beef up their effort everytime they achieve something.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/jekyll-uno/images/leftright.png&quot; alt=&quot;Leftright&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;topic-extraction&quot;&gt;Topic Extraction&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/jekyll-uno/images/coherence.png&quot; alt=&quot;Coherence&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;input type=&quot;button&quot; id=&quot;toggler&quot; value=&quot;Toggler&quot; onclick=&quot;action();&quot; /&gt;
+&lt;input type=&quot;button&quot; id=&quot;togglee&quot; value=&quot;Togglee&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;select id=&quot;list&quot;&gt;
+  &lt;option value=&quot;0&quot;&gt;Before compaign Russian right trolls&lt;/option&gt;
+  &lt;option value=&quot;1&quot;&gt;Before compaign Russian left trolls&lt;/option&gt;
+  &lt;option value=&quot;2&quot;&gt;Before compaign Russian all trolls&lt;/option&gt;
+  &lt;option value=&quot;3&quot;&gt;After compaign Russian right trolls&lt;/option&gt;
+  &lt;option value=&quot;4&quot;&gt;After compaign Russian left trolls&lt;/option&gt;
+  &lt;option value=&quot;5&quot;&gt;After compaign Russian all trolls&lt;/option&gt;
+  &lt;option value=&quot;6&quot;&gt;During compaign Russian right trolls&lt;/option&gt;
+  &lt;option value=&quot;7&quot;&gt;During compaign Russian left trolls&lt;/option&gt;
+  &lt;option value=&quot;8&quot;&gt;During compaign Russian all trolls&lt;/option&gt;
+  &lt;option value=&quot;9&quot;&gt;Before compaign Iranian trolls&lt;/option&gt;
+  &lt;option value=&quot;10&quot;&gt;During compaign Iranian trolls&lt;/option&gt;
+  &lt;option value=&quot;11&quot;&gt;After compaign Iranian trolls&lt;/option&gt;
+&lt;/select&gt;&lt;/p&gt;
+
+&lt;iframe src=&quot;/jekyll-uno/lda_beforecompaign_righttroll_russia.html&quot; height=&quot;800px&quot; width=&quot;1200px&quot; id=&quot;0&quot; style=&quot;visibility: : visible;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;/jekyll-uno/lda_before_campain_left_russia.html&quot; height=&quot;800px&quot; width=&quot;1200px&quot; id=&quot;1&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;/jekyll-uno/lda_before_campain_all_russia.html&quot; height=&quot;800px&quot; width=&quot;1200px&quot; id=&quot;2&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
+
+&lt;iframe src=&quot;/jekyll-uno/lda_after_campain_right_russia.html&quot; height=&quot;800px&quot; width=&quot;1200px&quot; id=&quot;3&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;/jekyll-uno/lda_after_campain_left_russia.html&quot; height=&quot;800px&quot; width=&quot;1200px&quot; id=&quot;4&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;/jekyll-uno/lda_after_campain_all_russia.html&quot; height=&quot;800px&quot; width=&quot;1200px&quot; id=&quot;5&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
+
+&lt;iframe src=&quot;/jekyll-uno/lda_during_campain_right_russia.html&quot; height=&quot;800px&quot; width=&quot;1200px&quot; id=&quot;6&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;/jekyll-uno/lda_during_campain_left_russia.html&quot; height=&quot;800px&quot; width=&quot;1200px&quot; id=&quot;7&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;/jekyll-uno/lda_during_campain_all_russia.html&quot; height=&quot;800px&quot; width=&quot;1200px&quot; id=&quot;8&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
+
+&lt;iframe src=&quot;/jekyll-uno/lda_iran_before.html&quot; height=&quot;800px&quot; width=&quot;1200px&quot; id=&quot;9&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;/jekyll-uno/lda_iran_during.html&quot; height=&quot;800px&quot; width=&quot;1200px&quot; id=&quot;10&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;/jekyll-uno/lda_iran_after.html&quot; height=&quot;800px&quot; width=&quot;1200px&quot; id=&quot;11&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+ /* var hidden = false;
+  function listQ(){
+    var e = document.getElementById(&quot;list&quot;);
+    if(e.selectedIndex &gt; 0){
+      if(&quot;1&quot; === e.options[e.selectedIndex].value){ alert(&quot;yo&quot;);
+
+      	        hidden = !hidden;
+        if(hidden) {
+            document.getElementById('0').style.visibility = 'hidden';
+        } else {
+            document.getElementById('0').style.visibility = 'visible';
+        }
+
+       }
+    }
+  }
+  document.getElementById(&quot;list&quot;).addEventListener(&quot;change&quot;,listQ);*/
+
+  var idDisplayed = '0';
+  function listQ(){
+    var e = document.getElementById(&quot;list&quot;);
+    	document.getElementById(e.options[e.selectedIndex].value).style.display = 'block';
+    	document.getElementById(idDisplayed).style.display = 'none';
+    	alert(idDisplayed)
+   		idDisplayed = e.options[e.selectedIndex].value
+   		alert(idDisplayed)
+  }
+  document.getElementById(&quot;list&quot;).addEventListener(&quot;change&quot;,listQ);
+&lt;/script&gt;
+
+&lt;p&gt;&lt;img src=&quot;/jekyll-uno/images/keywords.png&quot; alt=&quot;Matching&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;right-vs-left-trolls&quot;&gt;Right vs Left trolls&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://127.0.0.1:4444/jekyll-uno/2016/welcome-to-jekyll/&quot;&gt;I’m an inline-style link&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Fri, 08 Jan 2016 16:04:23 +0100</pubDate>
-        <link>http://localhost:4444//2016/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://localhost:4444//2016/welcome-to-jekyll/</guid>
+        <pubDate>Wed, 10 Jan 2018 00:00:00 +0100</pubDate>
+        <link>http://localhost:4444/jekyll-uno/2018/intro/</link>
+        <guid isPermaLink="true">http://localhost:4444/jekyll-uno/2018/intro/</guid>
+        
         
         <category>jekyll</category>
+        
+      </item>
+    
+      <item>
+        <title>About us</title>
+        <description>&lt;p&gt;The project was done to fullfill the Applied Data Analysis course requirements.
+We’re three students:
+Ahmed Saadallah, Master student, EPFL
+Jessica Lanini, PhD student, EPFL&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/jekyll-uno/images/troll.png&quot; alt=&quot;Drag Racing&quot; /&gt;
+&lt;a href=&quot;http://127.0.0.1:4444/jekyll-uno/2016/welcome-to-jekyll/&quot;&gt;I’m an inline-style link&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 09 Jan 2018 00:00:00 +0100</pubDate>
+        <link>http://localhost:4444/jekyll-uno/2018/dataset/</link>
+        <guid isPermaLink="true">http://localhost:4444/jekyll-uno/2018/dataset/</guid>
         
         
         <category>jekyll</category>
