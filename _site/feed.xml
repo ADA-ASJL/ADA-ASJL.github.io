@@ -5,8 +5,8 @@
     <description>Applied Data Analysis EPFL</description>
     <link>http://localhost:4444/jekyll-uno/</link>
     <atom:link href="http://localhost:4444/jekyll-uno/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 15 Dec 2018 22:26:38 +0100</pubDate>
-    <lastBuildDate>Sat, 15 Dec 2018 22:26:38 +0100</lastBuildDate>
+    <pubDate>Sat, 15 Dec 2018 22:31:20 +0100</pubDate>
+    <lastBuildDate>Sat, 15 Dec 2018 22:31:20 +0100</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
     
       <item>
@@ -120,7 +120,7 @@ Unknown           7261&lt;/p&gt;
   &lt;option value=&quot;11&quot;&gt;After compaign Iranian trolls&lt;/option&gt;
 &lt;/select&gt;&lt;/p&gt;
 
-&lt;iframe src=&quot;/jekyll-uno/lda_beforecompaign_righttroll_russia.html&quot; height=&quot;800px&quot; width=&quot;1200px&quot; id=&quot;0&quot; style=&quot;visibility: : visible;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;/lda_beforecompaign_righttroll_russia.html&quot; height=&quot;800px&quot; width=&quot;1200px&quot; id=&quot;0&quot; style=&quot;visibility: : visible;&quot;&gt;&lt;/iframe&gt;
 &lt;iframe src=&quot;/jekyll-uno/lda_before_campain_left_russia.html&quot; height=&quot;800px&quot; width=&quot;1200px&quot; id=&quot;1&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
 &lt;iframe src=&quot;/jekyll-uno/lda_before_campain_all_russia.html&quot; height=&quot;800px&quot; width=&quot;1200px&quot; id=&quot;2&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
 
