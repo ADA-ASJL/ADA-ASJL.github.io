@@ -2,8 +2,8 @@
 title: Twitter trolls strategy to disrupt democracy
 description: 'Applied Data Analysis EPFL'
 url: 'https://ada-asjl.github.io'
-#baseurl: '/jekyll-uno'
-baseurl: '/' # change to this to run on github
+baseurl: '/jekyll-uno'
+#baseurl: '/' # change to this to run on github
 
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'

@@ -57,7 +57,7 @@ Social media went from exciting to being ingrained in our societies and its infl
   <meta name="msapplication-TileImage" content="/jekyll-uno/images/favicons/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
   
-  <link rel="stylesheet" href="/jekyll-uno/css/main.css?1544909480652009000">
+  <link rel="stylesheet" href="/jekyll-uno/css/main.css?1544976908244467000">
   <link rel="canonical" href="http://localhost:4444/jekyll-uno/2018/intro/">
   <link rel="alternate" type="application/rss+xml" title="Twitter trolls strategy to disrupt democracy" href="/jekyll-uno/feed.xml">
 </head>
@@ -171,15 +171,93 @@ Social media went from exciting to being ingrained in our societies and its infl
 <p>Social media went from exciting to being ingrained in our societies and its influence exceeded the personal sphere to attain even our legal framework and political institutions. The question of regulating social networks is currently a hot topic especially with the rise of the concept of cyber warfare and what that entails in terms of disruption and propaganda. It is therefore very important to study how social media can be used to create narratives and tip the scales into one way or the other. In particular, the Internet Research Agency, a Russian troll factory was accused of interfering in multiple foreign political processes like the the 2016 US presidential elections. We dispose of a dataset of roughly 3 millions tweets spanned between 2012 and 2018 related to accounts of this agency. The aim is to understand what these tweets focus on and how do they adapt with respect to major political and politically divisive events.</p>
 
 <h2 id="dataset">Dataset</h2>
+<p>We dispose of a total of 3 datasets: 2 related to the Russian Internet Research Agency IRA and one to the Iranian goverment.
+The first Russian dataset was released by FiveThirtyEight in July/AUgust 2018 and contains a total of roughly 3 million tweets. The tweets in this database were sent between February 2012 and May 2018, with the vast majority posted from 2015 through 2017. This dataset was labeled by category and has the following structure:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Header</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">external_author_id</code></td>
+      <td>An author account ID from Twitter</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">author</code></td>
+      <td>The handle sending the tweet</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">content</code></td>
+      <td>The text of the tweet</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">region</code></td>
+      <td>A region classification, as <a href="https://help.salesforce.com/articleView?   id=000199367&amp;type=1">determined by Social Studio</a></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">language</code></td>
+      <td>The language of the tweet</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">publish_date</code></td>
+      <td>The date and time the tweet was sent</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">harvested_date</code></td>
+      <td>The date and time the tweet was collected by Social Studio</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">following</code></td>
+      <td>The number of accounts the handle was following at the time of the tweet</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">followers</code></td>
+      <td>The number of followers the handle had at the time of the tweet</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">updates</code></td>
+      <td>The number of “update actions” on the account that authored the tweet, including tweets, retweets and likes</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">post_type</code></td>
+      <td>Indicates if the tweet was a retweet or a quote-tweet</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">account_type</code></td>
+      <td>Specific account theme, as coded by Linvill and Warren</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">retweet</code></td>
+      <td>A binary indicator of whether or not the tweet is a retweet</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">account_category</code></td>
+      <td>General account theme, as coded by Linvill and Warren</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The two other datasets were released by twitter in October 2018. We have got an extra 9 millions Russian troll data and 1 million affiliated to Iran. These datasets are not labeled in terms of account category but contain more information than the previous one. Unfortunately the location of the twitter users for almost all the dataset is unknown and it’s not possible to visualize the location of these trolls.</p>
 
 <h2 id="methodology">Methodology</h2>
+<p>Our analysis focuses on 2 dimensions:
+First, we take the first Russian dataset and see the tweets activity versus politically related events in the US. We will take advantage of the account category labeling to see how right wing trolls and left wing trolls compare.
+Then, we explore topics that the Russians targeted and compare them to the Iranian ones to have a better understanding of each strategy.
+We also talk about how to classify the unlabeled Russian and Iranian datasets to different categories.</p>
 
 <h2 id="general-analysis">General Analysis</h2>
 
 <p>Looking at the first Russian troll twitter data, we find 2772 user accounts all linked to the IRA. Among all the authors only 119 are responsible for roughly half of the tweets and there a few users with a large number of tweets. <br />
 What is interesting to see here is that 3 authors from the top 6 authors are dedicated to talking about news and the top author of the data is categorized as a Commercial account. This shows that the operation is sophisticated in the sense that trolls try to play both sides right and left but also put the hat of the news media, commercial outlets and other more casual categories to blend into the public and engage them into reacting and following a carefully selected set of events.</p>
 
-<p><img src="/jekyll-uno/images/authors_count.png" alt="Authors" /></p>
+<p><img src="/jekyll-uno/images/authors_count.png" alt="Authors" />
+<img src="/jekyll-uno/images/authors_count.png" align="middle" /></p>
+
+<p><img src="/jekyll-uno/images/authors_count.png" alt="Smiley face" align="middle" style="margin:0px 0px 0px 150px" /></p>
 
 <table>
   <thead>
@@ -229,7 +307,7 @@ What is interesting to see here is that 3 authors from the top 6 authors are ded
 The proportion of Russian tweets is  20.72812544412336
 The number of languages figuring in the dataset is 56</p>
 
-<p>Nore than 92% of the tweets are in English or Russian. We will therefore restrict further analysis to only the tweets in English. It’s interesting to see that the IRA uses a large number of languages in its disruptive process.
+<p>More than 92% of the tweets are in English or Russian. We will therefore restrict further analysis to only the tweets in English. It’s interesting to see that the IRA uses a large number of languages in its disruptive process.
 English New dataset size is (2092539, 16)</p>
 
 <p>account_category
@@ -247,8 +325,24 @@ Unknown           7261</p>
 <h2 id="tweet-activity">Tweet Activity</h2>
 <p><img src="/jekyll-uno/images/monthly.png" alt="Monthly" />
 <img src="/jekyll-uno/images/daily.png" alt="Daily" />
-<img src="/jekyll-uno/images/hourly.png" alt="Hourly" />
-<img src="/jekyll-uno/images/different.png" alt="Different" /></p>
+<img src="/jekyll-uno/images/hourly.png" alt="Hourly" /></p>
+
+<div style="clear: right;">
+    <p style="float: right;"><img src="/jekyll-uno/images/1.jpg" border="1px" /></p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+</div>
+
+<div style="clear: right;">
+    <p style="float: right;"><img src="/jekyll-uno/images/2.jpg" border="1px" /></p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+</div>
+
+<div style="clear: right;">
+    <p style="float: right;"><img src="/jekyll-uno/images/0.jpg" border="1px" /></p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+</div>
+
+<p><img src="/jekyll-uno/images/different.png" alt="Different" /></p>
 
 <p>After the compaign at any hour of the day the number of tweets is higher than the maximum hourly number of tweets during the compaign. The same applies to during the compaign and before it. This is actually very insightfull. It means the IRA was much less interested in interfering with the political process before Donald Trump announced his candidacy. Then when he did, they strongly increased the tweeting frequency until he won. After the elections, the IRA was even more interested in compromising the public opinion. Of course, this is only an approximation since we don’t have the logs of all the IRA’s activity but this is a good indicator that they beef up their effort everytime they achieve something.</p>
 
@@ -257,9 +351,6 @@ Unknown           7261</p>
 <h2 id="topic-extraction">Topic Extraction</h2>
 
 <p><img src="/jekyll-uno/images/coherence.png" alt="Coherence" /></p>
-
-<p><input type="button" id="toggler" value="Toggler" onclick="action();" />
-<input type="button" id="togglee" value="Togglee" /></p>
 
 <p><select id="list">
   <option value="0">Before compaign Russian right trolls</option>
@@ -274,23 +365,24 @@ Unknown           7261</p>
   <option value="9">Before compaign Iranian trolls</option>
   <option value="10">During compaign Iranian trolls</option>
   <option value="11">After compaign Iranian trolls</option>
+  <option value="12">General public August 2017</option>
 </select></p>
 
-<iframe src="/lda_beforecompaign_righttroll_russia.html" height="800px" width="1200px" id="0" style="visibility: : visible;"></iframe>
-<iframe src="/jekyll-uno/lda_before_campain_left_russia.html" height="800px" width="1200px" id="1" style="display:none;"></iframe>
-<iframe src="/jekyll-uno/lda_before_campain_all_russia.html" height="800px" width="1200px" id="2" style="display:none;"></iframe>
+<iframe src="/jekyll-uno/lda_beforecompaign_righttroll_russia.html" height="900px" width="1200px" id="0" style="display: : block;"></iframe>
+<iframe src="/jekyll-uno/lda_before_campain_left_russia.html" height="900px" width="1200px" id="1" style="display:none;"></iframe>
+<iframe src="/jekyll-uno/lda_before_campain_all_russia.html" height="900px" width="1200px" id="2" style="display:none;"></iframe>
 
-<iframe src="/jekyll-uno/lda_after_campain_right_russia.html" height="800px" width="1200px" id="3" style="display:none;"></iframe>
-<iframe src="/jekyll-uno/lda_after_campain_left_russia.html" height="800px" width="1200px" id="4" style="display:none;"></iframe>
-<iframe src="/jekyll-uno/lda_after_campain_all_russia.html" height="800px" width="1200px" id="5" style="display:none;"></iframe>
+<iframe src="/jekyll-uno/lda_after_campain_right_russia.html" height="900px" width="1200px" id="3" style="display:none;"></iframe>
+<iframe src="/jekyll-uno/lda_after_campain_left_russia.html" height="900px" width="1200px" id="4" style="display:none;"></iframe>
+<iframe src="/jekyll-uno/lda_after_campain_all_russia.html" height="900px" width="1200px" id="5" style="display:none;"></iframe>
 
-<iframe src="/jekyll-uno/lda_during_campain_right_russia.html" height="800px" width="1200px" id="6" style="display:none;"></iframe>
-<iframe src="/jekyll-uno/lda_during_campain_left_russia.html" height="800px" width="1200px" id="7" style="display:none;"></iframe>
-<iframe src="/jekyll-uno/lda_during_campain_all_russia.html" height="800px" width="1200px" id="8" style="display:none;"></iframe>
+<iframe src="/jekyll-uno/lda_during_campain_right_russia.html" height="900px" width="1200px" id="6" style="display:none;"></iframe>
+<iframe src="/jekyll-uno/lda_during_campain_left_russia.html" height="900px" width="1200px" id="7" style="display:none;"></iframe>
+<iframe src="/jekyll-uno/lda_during_campain_all_russia.html" height="900px" width="1200px" id="8" style="display:none;"></iframe>
 
-<iframe src="/jekyll-uno/lda_iran_before.html" height="800px" width="1200px" id="9" style="display:none;"></iframe>
-<iframe src="/jekyll-uno/lda_iran_during.html" height="800px" width="1200px" id="10" style="display:none;"></iframe>
-<iframe src="/jekyll-uno/lda_iran_after.html" height="800px" width="1200px" id="11" style="display:none;"></iframe>
+<iframe src="/jekyll-uno/lda_iran_before.html" height="900px" width="1200px" id="9" style="display:none;"></iframe>
+<iframe src="/jekyll-uno/lda_iran_during.html" height="900px" width="1200px" id="10" style="display:none;"></iframe>
+<iframe src="/jekyll-uno/lda_iran_after.html" height="900px" width="1200px" id="11" style="display:none;"></iframe>
 
 <script type="text/javascript">
  /* var hidden = false;
@@ -316,16 +408,36 @@ Unknown           7261</p>
     var e = document.getElementById("list");
     	document.getElementById(e.options[e.selectedIndex].value).style.display = 'block';
     	document.getElementById(idDisplayed).style.display = 'none';
-    	alert(idDisplayed)
+    //	alert(idDisplayed)
    		idDisplayed = e.options[e.selectedIndex].value
-   		alert(idDisplayed)
+   	//	alert(idDisplayed)
   }
   document.getElementById("list").addEventListener("change",listQ);
 </script>
 
 <p><img src="/jekyll-uno/images/keywords.png" alt="Matching" /></p>
 
+<p><a href="http://www.themedialine.org/featured/slutwalk-through-the-holy-city/">Media on terrorism </a>
+<a href="https://www.independent.co.uk/news/world/americas/malala-in-america-young-activist-visits-congress-in-capitol-hill-to-urge-more-education-funding-for-10342722.html">Malala in America</a>
+<a href="http://en.farsnews.com/newstext.aspx?nn=13940327001517">Yemen Missile Attacks</a>
+<a href="https://edition.cnn.com/2015/06/26/world/kuwait-mosque-attack/index.html">Bomb Kuwait</a>
+<a href="https://www.timesofisrael.com/kerry-too-early-to-tell-if-iran-nuclear-deal-will-be-sealed/">Nuclear deal with Iran</a>
+<a href="http://en.farsnews.com/newstext.aspx?nn=13940325000360">Ramadam</a></p>
+
+<p><img src="/jekyll-uno/images/russiaword2vec.jpeg" alt="Flowers in Chania" style="width:800px;height:400px;" />
+<img src="/jekyll-uno/images/russiaword2vec.jpeg" alt="russia" />
+<img src="/jekyll-uno/images/iranword2vec.png" alt="iran" /></p>
+
+<p><img src="/jekyll-uno/images/iran_simple.png" alt="iran" />
+The wordcloud above highlights the most ocurring words in the Iranian trolls dataset. We can see that the the subjects are mostly regional such as the Israeli-Iranian tension, Saudi Arabia and the conflict in Yemen, Syria and isis, Turkey and Russia for their direct influence over the situation in Syria and of course the United States through Trump and Obama. The Iranians’ troll focus is narrow and focalizes on matters that are closely related to Iran’s interests.
+<img src="/jekyll-uno/images/rus_simple.png" alt="russia" />
+On the other hand, the Russians trolls dataset shows a wider spectrum of subjects such as US politics (Trump, Obama, Clinton), sports, news, buisness.</p>
+
+<p>Comparing both wordclouds shows that the Russian operation is much more sohisticated than the Iranian operation in the sense that trolls tried to blend in the public and seem more casual by tweeting about apolitical topics whereas the Iranian trolls seem more robotic and more straightforward.</p>
+
 <h2 id="right-vs-left-trolls">Right vs Left trolls</h2>
+
+<h2 id="references">References</h2>
 
 <p><a href="http://127.0.0.1:4444/jekyll-uno/2016/welcome-to-jekyll/">I’m an inline-style link</a></p>
 
@@ -338,11 +450,12 @@ Unknown           7261</p>
       </div>
 
       <footer class="footer">
-  <span class="footer__copyright">&copy; 2018 Josh Gerdes. All rights reserved.</span>
+  <div style="padding-left: 150px;">
+  <span class="footer__copyright">&copy; 2018  Ahmed Saadallah. All rights reserved.</span>
 </footer>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="/jekyll-uno/js/main.js?1544909480652009000"></script>
+<script type="text/javascript" src="/jekyll-uno/js/main.js?1544976908244467000"></script>
 
 
     </div>

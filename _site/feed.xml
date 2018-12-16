@@ -5,8 +5,8 @@
     <description>Applied Data Analysis EPFL</description>
     <link>http://localhost:4444/jekyll-uno/</link>
     <atom:link href="http://localhost:4444/jekyll-uno/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 15 Dec 2018 22:31:20 +0100</pubDate>
-    <lastBuildDate>Sat, 15 Dec 2018 22:31:20 +0100</lastBuildDate>
+    <pubDate>Sun, 16 Dec 2018 17:15:08 +0100</pubDate>
+    <lastBuildDate>Sun, 16 Dec 2018 17:15:08 +0100</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
     
       <item>
@@ -15,15 +15,93 @@
 &lt;p&gt;Social media went from exciting to being ingrained in our societies and its influence exceeded the personal sphere to attain even our legal framework and political institutions. The question of regulating social networks is currently a hot topic especially with the rise of the concept of cyber warfare and what that entails in terms of disruption and propaganda. It is therefore very important to study how social media can be used to create narratives and tip the scales into one way or the other. In particular, the Internet Research Agency, a Russian troll factory was accused of interfering in multiple foreign political processes like the the 2016 US presidential elections. We dispose of a dataset of roughly 3 millions tweets spanned between 2012 and 2018 related to accounts of this agency. The aim is to understand what these tweets focus on and how do they adapt with respect to major political and politically divisive events.&lt;/p&gt;
 
 &lt;h2 id=&quot;dataset&quot;&gt;Dataset&lt;/h2&gt;
+&lt;p&gt;We dispose of a total of 3 datasets: 2 related to the Russian Internet Research Agency IRA and one to the Iranian goverment.
+The first Russian dataset was released by FiveThirtyEight in July/AUgust 2018 and contains a total of roughly 3 million tweets. The tweets in this database were sent between February 2012 and May 2018, with the vast majority posted from 2015 through 2017. This dataset was labeled by category and has the following structure:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Header&lt;/th&gt;
+      &lt;th&gt;Definition&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;external_author_id&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;An author account ID from Twitter&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;author&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;The handle sending the tweet&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;content&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;The text of the tweet&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;region&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;A region classification, as &lt;a href=&quot;https://help.salesforce.com/articleView?   id=000199367&amp;amp;type=1&quot;&gt;determined by Social Studio&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;language&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;The language of the tweet&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;publish_date&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;The date and time the tweet was sent&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;harvested_date&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;The date and time the tweet was collected by Social Studio&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;following&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;The number of accounts the handle was following at the time of the tweet&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;followers&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;The number of followers the handle had at the time of the tweet&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;updates&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;The number of “update actions” on the account that authored the tweet, including tweets, retweets and likes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;post_type&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Indicates if the tweet was a retweet or a quote-tweet&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;account_type&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Specific account theme, as coded by Linvill and Warren&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;retweet&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;A binary indicator of whether or not the tweet is a retweet&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;account_category&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;General account theme, as coded by Linvill and Warren&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The two other datasets were released by twitter in October 2018. We have got an extra 9 millions Russian troll data and 1 million affiliated to Iran. These datasets are not labeled in terms of account category but contain more information than the previous one. Unfortunately the location of the twitter users for almost all the dataset is unknown and it’s not possible to visualize the location of these trolls.&lt;/p&gt;
 
 &lt;h2 id=&quot;methodology&quot;&gt;Methodology&lt;/h2&gt;
+&lt;p&gt;Our analysis focuses on 2 dimensions:
+First, we take the first Russian dataset and see the tweets activity versus politically related events in the US. We will take advantage of the account category labeling to see how right wing trolls and left wing trolls compare.
+Then, we explore topics that the Russians targeted and compare them to the Iranian ones to have a better understanding of each strategy.
+We also talk about how to classify the unlabeled Russian and Iranian datasets to different categories.&lt;/p&gt;
 
 &lt;h2 id=&quot;general-analysis&quot;&gt;General Analysis&lt;/h2&gt;
 
 &lt;p&gt;Looking at the first Russian troll twitter data, we find 2772 user accounts all linked to the IRA. Among all the authors only 119 are responsible for roughly half of the tweets and there a few users with a large number of tweets. &lt;br /&gt;
 What is interesting to see here is that 3 authors from the top 6 authors are dedicated to talking about news and the top author of the data is categorized as a Commercial account. This shows that the operation is sophisticated in the sense that trolls try to play both sides right and left but also put the hat of the news media, commercial outlets and other more casual categories to blend into the public and engage them into reacting and following a carefully selected set of events.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/jekyll-uno/images/authors_count.png&quot; alt=&quot;Authors&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/jekyll-uno/images/authors_count.png&quot; alt=&quot;Authors&quot; /&gt;
+&lt;img src=&quot;/jekyll-uno/images/authors_count.png&quot; align=&quot;middle&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/jekyll-uno/images/authors_count.png&quot; alt=&quot;Smiley face&quot; align=&quot;middle&quot; style=&quot;margin:0px 0px 0px 150px&quot; /&gt;&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -73,7 +151,7 @@ What is interesting to see here is that 3 authors from the top 6 authors are ded
 The proportion of Russian tweets is  20.72812544412336
 The number of languages figuring in the dataset is 56&lt;/p&gt;
 
-&lt;p&gt;Nore than 92% of the tweets are in English or Russian. We will therefore restrict further analysis to only the tweets in English. It’s interesting to see that the IRA uses a large number of languages in its disruptive process.
+&lt;p&gt;More than 92% of the tweets are in English or Russian. We will therefore restrict further analysis to only the tweets in English. It’s interesting to see that the IRA uses a large number of languages in its disruptive process.
 English New dataset size is (2092539, 16)&lt;/p&gt;
 
 &lt;p&gt;account_category
@@ -91,8 +169,24 @@ Unknown           7261&lt;/p&gt;
 &lt;h2 id=&quot;tweet-activity&quot;&gt;Tweet Activity&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;/jekyll-uno/images/monthly.png&quot; alt=&quot;Monthly&quot; /&gt;
 &lt;img src=&quot;/jekyll-uno/images/daily.png&quot; alt=&quot;Daily&quot; /&gt;
-&lt;img src=&quot;/jekyll-uno/images/hourly.png&quot; alt=&quot;Hourly&quot; /&gt;
-&lt;img src=&quot;/jekyll-uno/images/different.png&quot; alt=&quot;Different&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/jekyll-uno/images/hourly.png&quot; alt=&quot;Hourly&quot; /&gt;&lt;/p&gt;
+
+&lt;div style=&quot;clear: right;&quot;&gt;
+    &lt;p style=&quot;float: right;&quot;&gt;&lt;img src=&quot;/jekyll-uno/images/1.jpg&quot; border=&quot;1px&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;clear: right;&quot;&gt;
+    &lt;p style=&quot;float: right;&quot;&gt;&lt;img src=&quot;/jekyll-uno/images/2.jpg&quot; border=&quot;1px&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;clear: right;&quot;&gt;
+    &lt;p style=&quot;float: right;&quot;&gt;&lt;img src=&quot;/jekyll-uno/images/0.jpg&quot; border=&quot;1px&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/jekyll-uno/images/different.png&quot; alt=&quot;Different&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;After the compaign at any hour of the day the number of tweets is higher than the maximum hourly number of tweets during the compaign. The same applies to during the compaign and before it. This is actually very insightfull. It means the IRA was much less interested in interfering with the political process before Donald Trump announced his candidacy. Then when he did, they strongly increased the tweeting frequency until he won. After the elections, the IRA was even more interested in compromising the public opinion. Of course, this is only an approximation since we don’t have the logs of all the IRA’s activity but this is a good indicator that they beef up their effort everytime they achieve something.&lt;/p&gt;
 
@@ -101,9 +195,6 @@ Unknown           7261&lt;/p&gt;
 &lt;h2 id=&quot;topic-extraction&quot;&gt;Topic Extraction&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/jekyll-uno/images/coherence.png&quot; alt=&quot;Coherence&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;input type=&quot;button&quot; id=&quot;toggler&quot; value=&quot;Toggler&quot; onclick=&quot;action();&quot; /&gt;
-&lt;input type=&quot;button&quot; id=&quot;togglee&quot; value=&quot;Togglee&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;select id=&quot;list&quot;&gt;
   &lt;option value=&quot;0&quot;&gt;Before compaign Russian right trolls&lt;/option&gt;
@@ -118,23 +209,24 @@ Unknown           7261&lt;/p&gt;
   &lt;option value=&quot;9&quot;&gt;Before compaign Iranian trolls&lt;/option&gt;
   &lt;option value=&quot;10&quot;&gt;During compaign Iranian trolls&lt;/option&gt;
   &lt;option value=&quot;11&quot;&gt;After compaign Iranian trolls&lt;/option&gt;
+  &lt;option value=&quot;12&quot;&gt;General public August 2017&lt;/option&gt;
 &lt;/select&gt;&lt;/p&gt;
 
-&lt;iframe src=&quot;/lda_beforecompaign_righttroll_russia.html&quot; height=&quot;800px&quot; width=&quot;1200px&quot; id=&quot;0&quot; style=&quot;visibility: : visible;&quot;&gt;&lt;/iframe&gt;
-&lt;iframe src=&quot;/jekyll-uno/lda_before_campain_left_russia.html&quot; height=&quot;800px&quot; width=&quot;1200px&quot; id=&quot;1&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
-&lt;iframe src=&quot;/jekyll-uno/lda_before_campain_all_russia.html&quot; height=&quot;800px&quot; width=&quot;1200px&quot; id=&quot;2&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;/jekyll-uno/lda_beforecompaign_righttroll_russia.html&quot; height=&quot;900px&quot; width=&quot;1200px&quot; id=&quot;0&quot; style=&quot;display: : block;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;/jekyll-uno/lda_before_campain_left_russia.html&quot; height=&quot;900px&quot; width=&quot;1200px&quot; id=&quot;1&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;/jekyll-uno/lda_before_campain_all_russia.html&quot; height=&quot;900px&quot; width=&quot;1200px&quot; id=&quot;2&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
 
-&lt;iframe src=&quot;/jekyll-uno/lda_after_campain_right_russia.html&quot; height=&quot;800px&quot; width=&quot;1200px&quot; id=&quot;3&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
-&lt;iframe src=&quot;/jekyll-uno/lda_after_campain_left_russia.html&quot; height=&quot;800px&quot; width=&quot;1200px&quot; id=&quot;4&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
-&lt;iframe src=&quot;/jekyll-uno/lda_after_campain_all_russia.html&quot; height=&quot;800px&quot; width=&quot;1200px&quot; id=&quot;5&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;/jekyll-uno/lda_after_campain_right_russia.html&quot; height=&quot;900px&quot; width=&quot;1200px&quot; id=&quot;3&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;/jekyll-uno/lda_after_campain_left_russia.html&quot; height=&quot;900px&quot; width=&quot;1200px&quot; id=&quot;4&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;/jekyll-uno/lda_after_campain_all_russia.html&quot; height=&quot;900px&quot; width=&quot;1200px&quot; id=&quot;5&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
 
-&lt;iframe src=&quot;/jekyll-uno/lda_during_campain_right_russia.html&quot; height=&quot;800px&quot; width=&quot;1200px&quot; id=&quot;6&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
-&lt;iframe src=&quot;/jekyll-uno/lda_during_campain_left_russia.html&quot; height=&quot;800px&quot; width=&quot;1200px&quot; id=&quot;7&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
-&lt;iframe src=&quot;/jekyll-uno/lda_during_campain_all_russia.html&quot; height=&quot;800px&quot; width=&quot;1200px&quot; id=&quot;8&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;/jekyll-uno/lda_during_campain_right_russia.html&quot; height=&quot;900px&quot; width=&quot;1200px&quot; id=&quot;6&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;/jekyll-uno/lda_during_campain_left_russia.html&quot; height=&quot;900px&quot; width=&quot;1200px&quot; id=&quot;7&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;/jekyll-uno/lda_during_campain_all_russia.html&quot; height=&quot;900px&quot; width=&quot;1200px&quot; id=&quot;8&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
 
-&lt;iframe src=&quot;/jekyll-uno/lda_iran_before.html&quot; height=&quot;800px&quot; width=&quot;1200px&quot; id=&quot;9&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
-&lt;iframe src=&quot;/jekyll-uno/lda_iran_during.html&quot; height=&quot;800px&quot; width=&quot;1200px&quot; id=&quot;10&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
-&lt;iframe src=&quot;/jekyll-uno/lda_iran_after.html&quot; height=&quot;800px&quot; width=&quot;1200px&quot; id=&quot;11&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;/jekyll-uno/lda_iran_before.html&quot; height=&quot;900px&quot; width=&quot;1200px&quot; id=&quot;9&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;/jekyll-uno/lda_iran_during.html&quot; height=&quot;900px&quot; width=&quot;1200px&quot; id=&quot;10&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;/jekyll-uno/lda_iran_after.html&quot; height=&quot;900px&quot; width=&quot;1200px&quot; id=&quot;11&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;
 
 &lt;script type=&quot;text/javascript&quot;&gt;
  /* var hidden = false;
@@ -160,16 +252,36 @@ Unknown           7261&lt;/p&gt;
     var e = document.getElementById(&quot;list&quot;);
     	document.getElementById(e.options[e.selectedIndex].value).style.display = 'block';
     	document.getElementById(idDisplayed).style.display = 'none';
-    	alert(idDisplayed)
+    //	alert(idDisplayed)
    		idDisplayed = e.options[e.selectedIndex].value
-   		alert(idDisplayed)
+   	//	alert(idDisplayed)
   }
   document.getElementById(&quot;list&quot;).addEventListener(&quot;change&quot;,listQ);
 &lt;/script&gt;
 
 &lt;p&gt;&lt;img src=&quot;/jekyll-uno/images/keywords.png&quot; alt=&quot;Matching&quot; /&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;a href=&quot;http://www.themedialine.org/featured/slutwalk-through-the-holy-city/&quot;&gt;Media on terrorism &lt;/a&gt;
+&lt;a href=&quot;https://www.independent.co.uk/news/world/americas/malala-in-america-young-activist-visits-congress-in-capitol-hill-to-urge-more-education-funding-for-10342722.html&quot;&gt;Malala in America&lt;/a&gt;
+&lt;a href=&quot;http://en.farsnews.com/newstext.aspx?nn=13940327001517&quot;&gt;Yemen Missile Attacks&lt;/a&gt;
+&lt;a href=&quot;https://edition.cnn.com/2015/06/26/world/kuwait-mosque-attack/index.html&quot;&gt;Bomb Kuwait&lt;/a&gt;
+&lt;a href=&quot;https://www.timesofisrael.com/kerry-too-early-to-tell-if-iran-nuclear-deal-will-be-sealed/&quot;&gt;Nuclear deal with Iran&lt;/a&gt;
+&lt;a href=&quot;http://en.farsnews.com/newstext.aspx?nn=13940325000360&quot;&gt;Ramadam&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/jekyll-uno/images/russiaword2vec.jpeg&quot; alt=&quot;Flowers in Chania&quot; style=&quot;width:800px;height:400px;&quot; /&gt;
+&lt;img src=&quot;/jekyll-uno/images/russiaword2vec.jpeg&quot; alt=&quot;russia&quot; /&gt;
+&lt;img src=&quot;/jekyll-uno/images/iranword2vec.png&quot; alt=&quot;iran&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/jekyll-uno/images/iran_simple.png&quot; alt=&quot;iran&quot; /&gt;
+The wordcloud above highlights the most ocurring words in the Iranian trolls dataset. We can see that the the subjects are mostly regional such as the Israeli-Iranian tension, Saudi Arabia and the conflict in Yemen, Syria and isis, Turkey and Russia for their direct influence over the situation in Syria and of course the United States through Trump and Obama. The Iranians’ troll focus is narrow and focalizes on matters that are closely related to Iran’s interests.
+&lt;img src=&quot;/jekyll-uno/images/rus_simple.png&quot; alt=&quot;russia&quot; /&gt;
+On the other hand, the Russians trolls dataset shows a wider spectrum of subjects such as US politics (Trump, Obama, Clinton), sports, news, buisness.&lt;/p&gt;
+
+&lt;p&gt;Comparing both wordclouds shows that the Russian operation is much more sohisticated than the Iranian operation in the sense that trolls tried to blend in the public and seem more casual by tweeting about apolitical topics whereas the Iranian trolls seem more robotic and more straightforward.&lt;/p&gt;
+
 &lt;h2 id=&quot;right-vs-left-trolls&quot;&gt;Right vs Left trolls&lt;/h2&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://127.0.0.1:4444/jekyll-uno/2016/welcome-to-jekyll/&quot;&gt;I’m an inline-style link&lt;/a&gt;&lt;/p&gt;
 </description>
