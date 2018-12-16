@@ -5,8 +5,8 @@
     <description>Applied Data Analysis EPFL</description>
     <link>http://localhost:4444/jekyll-uno/</link>
     <atom:link href="http://localhost:4444/jekyll-uno/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 16 Dec 2018 23:47:58 +0100</pubDate>
-    <lastBuildDate>Sun, 16 Dec 2018 23:47:58 +0100</lastBuildDate>
+    <pubDate>Sun, 16 Dec 2018 23:52:38 +0100</pubDate>
+    <lastBuildDate>Sun, 16 Dec 2018 23:52:38 +0100</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
     
       <item>
@@ -271,15 +271,19 @@ pyLDAvis is a interactive LDA visualization python package. What my results look
 Are the iranian tweets consistent in the different periods with respect to the russian ones?
 Finally we looked at a specific event, which is the Charlottesville car attack on August 12, 2017. For this event the entire month of August 2017 has been analyzed for russian and iranian troll’s tweets. More so we also extracted a tweets dataset related to general public for August 2017. Here we are interested in answering the following questions:&lt;/p&gt;
 
-&lt;p&gt;Can we find in each dataset the expected topic, which is the Charlottesville car attack?
-Are the other topic for each dataset, e.g. russian, irianian and general public tweets, consistent?
-The analysis is structured as follows:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Can we find in each dataset the expected topic, which is the Charlottesville car attack?&lt;/li&gt;
+  &lt;li&gt;Are the other topic for each dataset, e.g. russian, irianian and general public tweets, consistent?&lt;br /&gt;
+The analysis is structured as follows:&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Definition of functions for for the topic analysis&lt;br /&gt;
-Russian trolls tweets analysis&lt;br /&gt;
-Iranian trolls tweets analusis&lt;br /&gt;
-General public analysis&lt;br /&gt;
-It is important to underline that, although a consistent procedure has been adopted there is some heuristics in the topic label assignment for each sequence of keywords which is related to the personal evaluation of the human operator. More so the topic extraction in this context is more challenging since the dataset is related to the same big topic, which is mainly politics, and the overlap among some subtopics is always present.&lt;/p&gt;
+&lt;p&gt;Definition of functions for for the topic analysis&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Russian trolls tweets analysis&lt;/li&gt;
+  &lt;li&gt;Iranian trolls tweets analusis&lt;/li&gt;
+  &lt;li&gt;General public analysis  &lt;br /&gt;
+It is important to underline that, although a consistent procedure has been adopted there is some heuristics in the topic label assignment for each sequence of keywords which is related to the personal evaluation of the human operator. More so the topic extraction in this context is more challenging since the dataset is related to the same big topic, which is mainly politics, and the overlap among some subtopics is always present.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;select id=&quot;list&quot;&gt;
   &lt;option value=&quot;0&quot;&gt;Before compaign Russian right trolls&lt;/option&gt;

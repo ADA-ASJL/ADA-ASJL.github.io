@@ -150,14 +150,15 @@ Are there differences among iranian tweets in the three different periods (e.g. 
 Are the iranian tweets consistent in the different periods with respect to the russian ones?
 Finally we looked at a specific event, which is the Charlottesville car attack on August 12, 2017. For this event the entire month of August 2017 has been analyzed for russian and iranian troll's tweets. More so we also extracted a tweets dataset related to general public for August 2017. Here we are interested in answering the following questions:
 
-Can we find in each dataset the expected topic, which is the Charlottesville car attack?
-Are the other topic for each dataset, e.g. russian, irianian and general public tweets, consistent?
+* Can we find in each dataset the expected topic, which is the Charlottesville car attack?  
+* Are the other topic for each dataset, e.g. russian, irianian and general public tweets, consistent?  
 The analysis is structured as follows:
 
 Definition of functions for for the topic analysis  
-Russian trolls tweets analysis  
-Iranian trolls tweets analusis  
-General public analysis  
+* Russian trolls tweets analysis  
+* Iranian trolls tweets analusis  
+* General public analysis  
+      
 It is important to underline that, although a consistent procedure has been adopted there is some heuristics in the topic label assignment for each sequence of keywords which is related to the personal evaluation of the human operator. More so the topic extraction in this context is more challenging since the dataset is related to the same big topic, which is mainly politics, and the overlap among some subtopics is always present.  
 
 
