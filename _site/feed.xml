@@ -5,8 +5,8 @@
     <description>Applied Data Analysis EPFL</description>
     <link>http://localhost:4444/jekyll-uno/</link>
     <atom:link href="http://localhost:4444/jekyll-uno/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 16 Dec 2018 23:28:54 +0100</pubDate>
-    <lastBuildDate>Sun, 16 Dec 2018 23:28:54 +0100</lastBuildDate>
+    <pubDate>Sun, 16 Dec 2018 23:38:23 +0100</pubDate>
+    <lastBuildDate>Sun, 16 Dec 2018 23:38:23 +0100</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
     
       <item>
@@ -209,17 +209,17 @@ We will therefore restrict further analysis to only the tweets in English. It’
 
 &lt;p&gt;We count the tweets monthly and aggregate at the last of the month where we have tweets. Here we can see the 10 busiest months for the trolls before, during and after the compaign.&lt;/p&gt;
 &lt;div style=&quot;clear: right;&quot;&gt;
-    &lt;p style=&quot;float: right;&quot;&gt;&lt;img src=&quot;/images/2.jpg&quot; border=&quot;1px&quot; /&gt;&lt;/p&gt;
+    &lt;p style=&quot;float: right;&quot;&gt;&lt;img src=&quot;/images/2.png&quot; border=&quot;1px&quot; /&gt;&lt;/p&gt;
     &lt;p&gt;        Before the compaign: The tweets activity during the month where Donald Trump announced his candidcay (June 2015) was by far the most intense in the precompaign period. This can be an indicator that the Russians were enthousiatics about his compaign from the early days. Before the middle of 2015, there was little activity. We can't be conclusive here because we do not have all logs of all the IRA activity but it seems that the US 2016 elections was the first important target in the US for the IRA&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div style=&quot;clear: right;&quot;&gt;
-    &lt;p style=&quot;float: right;&quot;&gt;&lt;img src=&quot;/images/1.jpg&quot; border=&quot;1px&quot; /&gt;&lt;/p&gt;
+    &lt;p style=&quot;float: right;&quot;&gt;&lt;img src=&quot;/images/1.png&quot; border=&quot;1px&quot; /&gt;&lt;/p&gt;
     &lt;p&gt;During the compaign: We can see a surge in the tweets in September and October 2016 corresponding to the months preceding the presidential elections. When we looked closely to the data, we've seen that particularly on October 6th and 7th, the frequency is very high. This can be probably explained by the second presdidential debate on the October 9th. In the same sense, there is an increase (although less important) on October 19th for the 3rd presidential debate.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div style=&quot;clear: right;&quot;&gt;
-    &lt;p style=&quot;float: right;&quot;&gt;&lt;img src=&quot;/images/0.jpg&quot; border=&quot;1px&quot; /&gt;&lt;/p&gt;
+    &lt;p style=&quot;float: right;&quot;&gt;&lt;img src=&quot;/images/0.png&quot; border=&quot;1px&quot; /&gt;&lt;/p&gt;
     &lt;p&gt; August 2017 is the trolls favorite. We can see that the spike in tweets from August 12 to August 18 2016. This can be explained by the fact that at the 12th a white supremacist rally occured and was followed by a peacefull protests in CharlottesVille Viriginia. A car crashed into the protestors killing one and injuring 28. This incident was intensely covered by the US media and stayed in the spotlight for a while especially after the famous comment tweeted by Trump: “You had some very bad people in that group. But you also had people that were very fine people, on both sides.” We will focus more on this month in the following section&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Charlottesville_car_attack&quot;&gt;Charlottesville car attack&lt;/a&gt;&lt;/p&gt;
@@ -387,7 +387,6 @@ Other topics in the left trolls tweets are really varied.&lt;/p&gt;
 Let’s dig deeper into August 2017 and in particular the Charlottesville attack.&lt;/p&gt;
 
 &lt;iframe src=&quot;/charlottesville.html&quot; height=&quot;2300px&quot; width=&quot;900px&quot; style=&quot;display:block&quot;&gt;&lt;/iframe&gt;
-
 &lt;p&gt;In all the three cases (russian, iranian trolls and general public) one can find something related to Charlottesville. The association with Trump can be also found in most of the cases for each category (russian, iranian trolls and general public). While looking at some tweets associated to Charlottesville it is possible to find few differences mostly related to the russian trolls with respect to the iranian ones and the general public. Russian trolls related to Charlottesville seems to be more politically oriented from a first qualitative analysis (e.g. some tweets are Charlottesville Terrorist ANTI TRUMP - President Trump Reacts Charlottesville Tragedy - Hillary Reacts Charlottesville Blaming White Supremacists - Marine Veteran Reveals TRUTH about Charlottesville Tragedy). In the other cases the tweets seems to be less aggressive both in the case of iranian trolls (e.g. some tweets are trust Facebook more than news Trump supporters explain they think Charlottesville setup - Trump says racism evil condemns Nazis white supremacists following Charlottesville protester death - Sessions concedes Charlottesville domestic terrorism DomesticTerrorism JeffSessions Social year since Charlottesville Time bring back cartoon drew last year Rather than condemn racist - White supremacists hold torch rally Charlottesville) and in the case of general pubblic (e.g. Republicans conservatives defending Trump Charlottesville morally bankrupt - Phoenix Mayor Greg Stanton Calls Trump Delay Rally Wake Charlottesville - heartbroken over Charlottesville will step down from Trump Manufacturing Council - Rosa Parks Daughter Praises Trump Response Charlottesville).&lt;br /&gt;
 We can then conclude that in that period among other topics the one related to Charlottesville are present and are threated in a slightly different way among the three categories analyzed.&lt;/p&gt;
 
