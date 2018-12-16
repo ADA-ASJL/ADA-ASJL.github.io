@@ -5,8 +5,8 @@
     <description>Applied Data Analysis EPFL</description>
     <link>http://localhost:4444/jekyll-uno/</link>
     <atom:link href="http://localhost:4444/jekyll-uno/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 16 Dec 2018 23:38:23 +0100</pubDate>
-    <lastBuildDate>Sun, 16 Dec 2018 23:38:23 +0100</lastBuildDate>
+    <pubDate>Sun, 16 Dec 2018 23:47:58 +0100</pubDate>
+    <lastBuildDate>Sun, 16 Dec 2018 23:47:58 +0100</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
     
       <item>
@@ -254,15 +254,18 @@ pyLDAvis is a interactive LDA visualization python package. What my results look
 &lt;ul&gt;
   &lt;li&gt;russian troll tweets&lt;/li&gt;
   &lt;li&gt;iranian troll tweets&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;general public&lt;br /&gt;
-For the first dataset, which is the russian one, we will distinguished among right, left trolls and right with left trolls analyzed all together. This procedure is possible since each russian troll tweet is labeled with respect to the latter information. Such an analysis will give us an overall evaluation of the topics trend for different categories of trolls. In particular the questions we are interested to answer in this stage are the following:&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;general public&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For the first dataset, which is the russian one, we will distinguished among right, left trolls and right with left trolls analyzed all together. This procedure is possible since each russian troll tweet is labeled with respect to the latter information. Such an analysis will give us an overall evaluation of the topics trend for different categories of trolls. In particular the questions we are interested to answer in this stage are the following:&lt;/p&gt;
+
+&lt;ul&gt;
   &lt;li&gt;Are the topics for the left and the right tweets meaningful?&lt;/li&gt;
   &lt;li&gt;Are the topics for the left and the right tweets similar or do they are different?&lt;/li&gt;
-  &lt;li&gt;Do we extract more information by analyzing the left and right tweets all together?&lt;br /&gt;
-After this analysis we will consider the iranian dataset. For the latter, the analysis of the entire dataframe, not distinguish between left and right trolls, is done. Indeed the iranian tweets are not labeled with respect to the trolls categories. The main questions we would like to address in this part of the work are the following:&lt;/li&gt;
+  &lt;li&gt;Do we extract more information by analyzing the left and right tweets all together?&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;After this analysis we will consider the iranian dataset. For the latter, the analysis of the entire dataframe, not distinguish between left and right trolls, is done. Indeed the iranian tweets are not labeled with respect to the trolls categories. The main questions we would like to address in this part of the work are the following:&lt;/p&gt;
 
 &lt;p&gt;Are there differences among iranian tweets in the three different periods (e.g. before, during and after the campain)?
 Are the iranian tweets consistent in the different periods with respect to the russian ones?
@@ -386,7 +389,7 @@ Other topics in the left trolls tweets are really varied.&lt;/p&gt;
 &lt;p&gt;Very interesting is the Charlottesville topic commented by right trolls in topic 3 and 8 and by left trolls in topic 27. Indeed in Charlottesville, Virginia, white nationalists descended to protest the removal of a statue of a Confederate general on Saturday, but the protest soon spiraled out of control into a violent, chaotic and deadly scene as the day went on (http://sunshinestatenews.com/story/florida-voices-react-violent-charlottesville-protest).&lt;br /&gt;
 Let’s dig deeper into August 2017 and in particular the Charlottesville attack.&lt;/p&gt;
 
-&lt;iframe src=&quot;/charlottesville.html&quot; height=&quot;2300px&quot; width=&quot;900px&quot; style=&quot;display:block&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;/charlottesville.html&quot; height=&quot;2000px&quot; width=&quot;900px&quot; style=&quot;display:block&quot;&gt;&lt;/iframe&gt;
 &lt;p&gt;In all the three cases (russian, iranian trolls and general public) one can find something related to Charlottesville. The association with Trump can be also found in most of the cases for each category (russian, iranian trolls and general public). While looking at some tweets associated to Charlottesville it is possible to find few differences mostly related to the russian trolls with respect to the iranian ones and the general public. Russian trolls related to Charlottesville seems to be more politically oriented from a first qualitative analysis (e.g. some tweets are Charlottesville Terrorist ANTI TRUMP - President Trump Reacts Charlottesville Tragedy - Hillary Reacts Charlottesville Blaming White Supremacists - Marine Veteran Reveals TRUTH about Charlottesville Tragedy). In the other cases the tweets seems to be less aggressive both in the case of iranian trolls (e.g. some tweets are trust Facebook more than news Trump supporters explain they think Charlottesville setup - Trump says racism evil condemns Nazis white supremacists following Charlottesville protester death - Sessions concedes Charlottesville domestic terrorism DomesticTerrorism JeffSessions Social year since Charlottesville Time bring back cartoon drew last year Rather than condemn racist - White supremacists hold torch rally Charlottesville) and in the case of general pubblic (e.g. Republicans conservatives defending Trump Charlottesville morally bankrupt - Phoenix Mayor Greg Stanton Calls Trump Delay Rally Wake Charlottesville - heartbroken over Charlottesville will step down from Trump Manufacturing Council - Rosa Parks Daughter Praises Trump Response Charlottesville).&lt;br /&gt;
 We can then conclude that in that period among other topics the one related to Charlottesville are present and are threated in a slightly different way among the three categories analyzed.&lt;/p&gt;
 
