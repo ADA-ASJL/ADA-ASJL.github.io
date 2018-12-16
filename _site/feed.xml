@@ -5,8 +5,8 @@
     <description>Applied Data Analysis EPFL</description>
     <link>http://localhost:4444/jekyll-uno/</link>
     <atom:link href="http://localhost:4444/jekyll-uno/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 16 Dec 2018 23:22:53 +0100</pubDate>
-    <lastBuildDate>Sun, 16 Dec 2018 23:22:53 +0100</lastBuildDate>
+    <pubDate>Sun, 16 Dec 2018 23:28:54 +0100</pubDate>
+    <lastBuildDate>Sun, 16 Dec 2018 23:28:54 +0100</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
     
       <item>
@@ -99,7 +99,7 @@ We also talk about how to classify the unlabeled Russian and Iranian datasets to
 What is interesting to see here is that 3 authors from the top 6 authors are dedicated to talking about news and the top author of the data is categorized as a Commercial account. This shows that the operation is sophisticated in the sense that trolls try to play both sides right and left but also put the hat of the news media, commercial outlets and other more casual categories to blend into the public and engage them into reacting and following a carefully selected set of events.&lt;/p&gt;
 
 &lt;figure&gt;
-&lt;img src=&quot;/jekyll-uno/images/authors_count.png&quot; align=&quot;middle&quot; /&gt;
+&lt;img src=&quot;/images/authors_count.png&quot; align=&quot;middle&quot; /&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Now let’s look at the account categories:&lt;/p&gt;
@@ -190,7 +190,7 @@ What is interesting to see here is that 3 authors from the top 6 authors are ded
 &lt;/table&gt;
 
 &lt;figure&gt;
-&lt;img src=&quot;/jekyll-uno/images/languages.png&quot; /&gt;
+&lt;img src=&quot;/images/languages.png&quot; /&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;In the above histogram, we can see that the dataset contains a total of 56 languages but is mainly composed of Russian (20.72%) and English (71.83%) tweets
@@ -199,36 +199,36 @@ We will therefore restrict further analysis to only the tweets in English. It’
 &lt;h2 id=&quot;tweet-activity&quot;&gt;Tweet Activity&lt;/h2&gt;
 
 &lt;figure&gt;
-&lt;img src=&quot;/jekyll-uno/images/monthly.png&quot; align=&quot;middle&quot; /&gt;
+&lt;img src=&quot;/images/monthly.png&quot; align=&quot;middle&quot; /&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;&lt;img src=&quot;/jekyll-uno/images/daily.png&quot; alt=&quot;Daily&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/daily.png&quot; alt=&quot;Daily&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;We can see in the monthly and daily aggregated plots, that in some periods of time the tweet activity increases in a significant way. This indicates that there is a predefined strategy behind the trolls.
-&lt;img src=&quot;/jekyll-uno/images/hourly.png&quot; alt=&quot;Hourly&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/images/hourly.png&quot; alt=&quot;Hourly&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;We count the tweets monthly and aggregate at the last of the month where we have tweets. Here we can see the 10 busiest months for the trolls before, during and after the compaign.&lt;/p&gt;
 &lt;div style=&quot;clear: right;&quot;&gt;
-    &lt;p style=&quot;float: right;&quot;&gt;&lt;img src=&quot;/jekyll-uno/images/2.jpg&quot; border=&quot;1px&quot; /&gt;&lt;/p&gt;
+    &lt;p style=&quot;float: right;&quot;&gt;&lt;img src=&quot;/images/2.jpg&quot; border=&quot;1px&quot; /&gt;&lt;/p&gt;
     &lt;p&gt;        Before the compaign: The tweets activity during the month where Donald Trump announced his candidcay (June 2015) was by far the most intense in the precompaign period. This can be an indicator that the Russians were enthousiatics about his compaign from the early days. Before the middle of 2015, there was little activity. We can't be conclusive here because we do not have all logs of all the IRA activity but it seems that the US 2016 elections was the first important target in the US for the IRA&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div style=&quot;clear: right;&quot;&gt;
-    &lt;p style=&quot;float: right;&quot;&gt;&lt;img src=&quot;/jekyll-uno/images/1.jpg&quot; border=&quot;1px&quot; /&gt;&lt;/p&gt;
+    &lt;p style=&quot;float: right;&quot;&gt;&lt;img src=&quot;/images/1.jpg&quot; border=&quot;1px&quot; /&gt;&lt;/p&gt;
     &lt;p&gt;During the compaign: We can see a surge in the tweets in September and October 2016 corresponding to the months preceding the presidential elections. When we looked closely to the data, we've seen that particularly on October 6th and 7th, the frequency is very high. This can be probably explained by the second presdidential debate on the October 9th. In the same sense, there is an increase (although less important) on October 19th for the 3rd presidential debate.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div style=&quot;clear: right;&quot;&gt;
-    &lt;p style=&quot;float: right;&quot;&gt;&lt;img src=&quot;/jekyll-uno/images/0.jpg&quot; border=&quot;1px&quot; /&gt;&lt;/p&gt;
+    &lt;p style=&quot;float: right;&quot;&gt;&lt;img src=&quot;/images/0.jpg&quot; border=&quot;1px&quot; /&gt;&lt;/p&gt;
     &lt;p&gt; August 2017 is the trolls favorite. We can see that the spike in tweets from August 12 to August 18 2016. This can be explained by the fact that at the 12th a white supremacist rally occured and was followed by a peacefull protests in CharlottesVille Viriginia. A car crashed into the protestors killing one and injuring 28. This incident was intensely covered by the US media and stayed in the spotlight for a while especially after the famous comment tweeted by Trump: “You had some very bad people in that group. But you also had people that were very fine people, on both sides.” We will focus more on this month in the following section&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Charlottesville_car_attack&quot;&gt;Charlottesville car attack&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/jekyll-uno/images/different.png&quot; alt=&quot;Different&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/different.png&quot; alt=&quot;Different&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;After the compaign at any hour of the day the number of tweets is higher than the maximum hourly number of tweets during the compaign. The same applies to during the compaign and before it. This is actually very insightfull. It means the IRA was much less interested in interfering with the political process before Donald Trump announced his candidacy. Then when he did, they strongly increased the tweeting frequency until he won. After the elections, the IRA was even more interested in compromising the public opinion. Of course, this is only an approximation since we don’t have the logs of all the IRA’s activity but this is a good indicator that they beef up their effort everytime they achieve something.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/jekyll-uno/images/leftright.png&quot; alt=&quot;Leftright&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/leftright.png&quot; alt=&quot;Leftright&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Overall, the number of tweets by right trolls is larger than the left trolls. The difference grows to almost the double after the elections. The idea here is that left trolls will divide the left and liberal agenda and to some extent give ways for the conservative and right agenda to prevail. It’s also an effective way to polarize the American society, increase stigma and make people focus on what divides them. After the compaign, this is not anymore the objective. the goal becomes how to better defend the president-elect and discredit his critics.&lt;/p&gt;
 
@@ -392,6 +392,8 @@ Let’s dig deeper into August 2017 and in particular the Charlottesville attack
 We can then conclude that in that period among other topics the one related to Charlottesville are present and are threated in a slightly different way among the three categories analyzed.&lt;/p&gt;
 
 &lt;p&gt;Let’s look now at some of the difference between the Russian and Iranian trolls:&lt;/p&gt;
+
+&lt;p&gt;After analysing russian and iranian troll’s tweets during the three periods before, during and after the campaign it is possible to notice that first of all the topics are more centered on iranian-related problems as well as the muslim aspects. The US component is more marginal expecially in the period “before” the campaign. In this last period it is possible also to notice a fewer activity of the iranain trolls with respect to the russian ones in terms of different topic analyzed. Iranian troll’s activity start increasing for the other two periods, during and after the campaign where Trump-related topics are well covered.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/iran_simple.png&quot; alt=&quot;iran&quot; /&gt;&lt;br /&gt;
 The wordcloud above highlights the most ocurring words in the Iranian trolls dataset. We can see that the the subjects are mostly regional such as the Israeli-Iranian tension, Saudi Arabia and the conflict in Yemen, Syria and isis, Turkey and Russia for their direct influence over the situation in Syria and of course the United States through Trump and Obama. The Iranians’ troll focus is narrow and focalizes on matters that are closely related to Iran’s interests.
