@@ -158,7 +158,7 @@ Definition of functions for for the topic analysis
 * Russian trolls tweets analysis  
 * Iranian trolls tweets analusis  
 * General public analysis  
-      
+
 It is important to underline that, although a consistent procedure has been adopted there is some heuristics in the topic label assignment for each sequence of keywords which is related to the personal evaluation of the human operator. More so the topic extraction in this context is more challenging since the dataset is related to the same big topic, which is mainly politics, and the overlap among some subtopics is always present.  
 
 
@@ -179,7 +179,7 @@ It is important to underline that, although a consistent procedure has been adop
 </select>
 
 
-<iframe src = "/lda_beforecompaign_righttroll_russia.html" height="900px" width="1220px" id='0' style="display: : block;"></iframe>
+<iframe src = "/lda_before_campain_right_russia.html" height="900px" width="1220px" id='0' style="display: : block;"></iframe>
 <iframe src = "/lda_before_campain_left_russia.html" height="900px" width="1220px" id='1' style="display:none;"></iframe>
 <iframe src = "/lda_before_campain_all_russia.html" height="900px" width="1220px" id='2' style="display:none;"></iframe>
 

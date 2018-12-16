@@ -5,8 +5,8 @@
     <description>Applied Data Analysis EPFL</description>
     <link>http://localhost:4444/jekyll-uno/</link>
     <atom:link href="http://localhost:4444/jekyll-uno/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 16 Dec 2018 23:52:38 +0100</pubDate>
-    <lastBuildDate>Sun, 16 Dec 2018 23:52:38 +0100</lastBuildDate>
+    <pubDate>Sun, 16 Dec 2018 23:52:47 +0100</pubDate>
+    <lastBuildDate>Sun, 16 Dec 2018 23:52:47 +0100</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
     
       <item>
@@ -281,9 +281,10 @@ The analysis is structured as follows:&lt;/li&gt;
 &lt;ul&gt;
   &lt;li&gt;Russian trolls tweets analysis&lt;/li&gt;
   &lt;li&gt;Iranian trolls tweets analusis&lt;/li&gt;
-  &lt;li&gt;General public analysis  &lt;br /&gt;
-It is important to underline that, although a consistent procedure has been adopted there is some heuristics in the topic label assignment for each sequence of keywords which is related to the personal evaluation of the human operator. More so the topic extraction in this context is more challenging since the dataset is related to the same big topic, which is mainly politics, and the overlap among some subtopics is always present.&lt;/li&gt;
+  &lt;li&gt;General public analysis&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;It is important to underline that, although a consistent procedure has been adopted there is some heuristics in the topic label assignment for each sequence of keywords which is related to the personal evaluation of the human operator. More so the topic extraction in this context is more challenging since the dataset is related to the same big topic, which is mainly politics, and the overlap among some subtopics is always present.&lt;/p&gt;
 
 &lt;p&gt;&lt;select id=&quot;list&quot;&gt;
   &lt;option value=&quot;0&quot;&gt;Before compaign Russian right trolls&lt;/option&gt;
