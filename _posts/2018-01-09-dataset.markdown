@@ -3,11 +3,11 @@ title:  "About us"
 categories: [jekyll]
 ---
 The project was done to fullfill the Applied Data Analysis course requirements.
-We're three students:
-Ahmed Saadallah, Master student, EPFL
-Jessica Lanini, PhD student, EPFL
+We're three students:  
+Ahmed Saadallah, Master student, EPFL  
+Jessica Lanini, PhD student, EPFL  
+Neeraj Yadav, Undergraduate student, IIT Kanpur
 
 
 
 ![Drag Racing](/jekyll-uno/images/troll.png)
-[I'm an inline-style link](http://127.0.0.1:4444/jekyll-uno/2016/welcome-to-jekyll/)

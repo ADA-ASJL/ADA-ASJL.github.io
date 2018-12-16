@@ -38,7 +38,7 @@
     <url>
       <loc>http://localhost:4444/feed.xml</loc>
       
-        <lastmod>2018-12-16T17:15:08+01:00</lastmod>
+        <lastmod>2018-12-16T21:24:02+01:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -53,7 +53,7 @@
     <url>
       <loc>http://localhost:4444/humans.txt</loc>
       
-        <lastmod>2018-12-16T17:15:08+01:00</lastmod>
+        <lastmod>2018-12-16T21:24:02+01:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -72,7 +72,7 @@
     <url>
       <loc>http://localhost:4444/css/main.css</loc>
       
-        <lastmod>2018-12-16T17:15:08+01:00</lastmod>
+        <lastmod>2018-12-16T21:24:02+01:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -91,7 +91,7 @@
     <url>
       <loc>http://localhost:4444/assets/css/style.css</loc>
       
-        <lastmod>2018-12-16T17:15:08+01:00</lastmod>
+        <lastmod>2018-12-16T21:24:02+01:00</lastmod>
       
       
         <changefreq>monthly</changefreq>

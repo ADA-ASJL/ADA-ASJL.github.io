@@ -57,7 +57,7 @@ Social media went from exciting to being ingrained in our societies and its infl
   <meta name="msapplication-TileImage" content="/jekyll-uno/images/favicons/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
   
-  <link rel="stylesheet" href="/jekyll-uno/css/main.css?1544976908244467000">
+  <link rel="stylesheet" href="/jekyll-uno/css/main.css?1544991842164869000">
   <link rel="canonical" href="http://localhost:4444/jekyll-uno/2018/intro/">
   <link rel="alternate" type="application/rss+xml" title="Twitter trolls strategy to disrupt democracy" href="/jekyll-uno/feed.xml">
 </head>
@@ -93,35 +93,6 @@ Social media went from exciting to being ingrained in our societies and its infl
           <nav class="cover-navigation navigation--social">
             <ul class="navigation">
 
-            
-              <!-- Twitter -->
-              <li class="navigation__item">
-                <a href="http://twitter.com/joshgerdes" title="@joshgerdes on Twitter" target="_blank">
-                  <i class="icon icon-social-twitter"></i>
-                  <span class="label">Twitter</span>
-                </a>
-              </li>
-            
-
-            
-              <!-- Facebook -->
-              <li class="navigation__item">
-                <a href="http://fb.me/joshgerdes" title="joshgerdes on Facebook" target="_blank">
-                  <i class="icon icon-social-facebook"></i>
-                  <span class="label">Facebook</span>
-                </a>
-              </li>
-            
-
-            
-              <!-- LinkedIn -->
-              <li class="navigation__item">
-                <a href="https://www.linkedin.com/in/joshgerdes" title="joshgerdes on LinkedIn" target="_blank">
-                  <i class="icon icon-social-linkedin"></i>
-                  <span class="label">LinkedIn</span>
-                </a>
-              </li>
-            
 
             
               <!-- GitHub -->
@@ -172,7 +143,7 @@ Social media went from exciting to being ingrained in our societies and its infl
 
 <h2 id="dataset">Dataset</h2>
 <p>We dispose of a total of 3 datasets: 2 related to the Russian Internet Research Agency IRA and one to the Iranian goverment.
-The first Russian dataset was released by FiveThirtyEight in July/AUgust 2018 and contains a total of roughly 3 million tweets. The tweets in this database were sent between February 2012 and May 2018, with the vast majority posted from 2015 through 2017. This dataset was labeled by category and has the following structure:</p>
+The first Russian dataset was released by FiveThirtyEight in July/August 2018 and contains a total of roughly 3 million tweets. The tweets in this database were sent between February 2012 and May 2018, with the vast majority posted from 2015 through 2017. This dataset was labeled by category and has the following structure:</p>
 
 <table>
   <thead>
@@ -254,10 +225,54 @@ We also talk about how to classify the unlabeled Russian and Iranian datasets to
 <p>Looking at the first Russian troll twitter data, we find 2772 user accounts all linked to the IRA. Among all the authors only 119 are responsible for roughly half of the tweets and there a few users with a large number of tweets. <br />
 What is interesting to see here is that 3 authors from the top 6 authors are dedicated to talking about news and the top author of the data is categorized as a Commercial account. This shows that the operation is sophisticated in the sense that trolls try to play both sides right and left but also put the hat of the news media, commercial outlets and other more casual categories to blend into the public and engage them into reacting and following a carefully selected set of events.</p>
 
-<p><img src="/jekyll-uno/images/authors_count.png" alt="Authors" />
-<img src="/jekyll-uno/images/authors_count.png" align="middle" /></p>
+<figure>
+<img src="/jekyll-uno/images/authors_count.png" align="middle" />
+</figure>
 
-<p><img src="/jekyll-uno/images/authors_count.png" alt="Smiley face" align="middle" style="margin:0px 0px 0px 150px" /></p>
+<p>Now let’s look at the account categories:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Account category</th>
+      <th style="text-align: center">N° Tweets</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Commercial</td>
+      <td style="text-align: center">113256</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Fearmonger</td>
+      <td style="text-align: center">10855</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">HashtagGamer</td>
+      <td style="text-align: center">216048</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">LeftTroll</td>
+      <td style="text-align: center">413711</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">NewsFeed</td>
+      <td style="text-align: center">597656</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">NonEnglish</td>
+      <td style="text-align: center">27632</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">RightTroll</td>
+      <td style="text-align: center">706120</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">unknown</td>
+      <td style="text-align: center">7261</td>
+    </tr>
+  </tbody>
+</table>
 
 <table>
   <thead>
@@ -301,46 +316,62 @@ What is interesting to see here is that 3 authors from the top 6 authors are ded
   </tbody>
 </table>
 
-<p><img src="/jekyll-uno/images/languages.png" alt="Languages" /></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name                             </th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">Value-One</code></td>
+      <td>Long explanation</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">Value-Two</code></td>
+      <td>Long explanation</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">etc</code></td>
+      <td>Long explanation</td>
+    </tr>
+  </tbody>
+</table>
 
-<p>The proportion of English tweets is  71.83346481101199
-The proportion of Russian tweets is  20.72812544412336
-The number of languages figuring in the dataset is 56</p>
+<figure>
+<img src="/jekyll-uno/images/languages.png" />
+</figure>
 
-<p>More than 92% of the tweets are in English or Russian. We will therefore restrict further analysis to only the tweets in English. It’s interesting to see that the IRA uses a large number of languages in its disruptive process.
-English New dataset size is (2092539, 16)</p>
-
-<p>account_category
-Commercial      113256
-Fearmonger       10855
-HashtagGamer    216048
-LeftTroll       413711
-NewsFeed        597656
-NonEnglish       27632
-RightTroll      706120
-Unknown           7261</p>
-
-<p>Right and Left troll New dataset size is (1119831, 15)</p>
+<p>In the above histogram, we can see that the dataset contains a total of 56 languages but is mainly composed of Russian (20.72%) and English (71.83%) tweets
+We will therefore restrict further analysis to only the tweets in English. It’s otherwise hard to perform topic extraction without understanding the language and having the tools to do. However, tt’s interesting to see that the IRA uses a large number of languages in its disruptive process.</p>
 
 <h2 id="tweet-activity">Tweet Activity</h2>
-<p><img src="/jekyll-uno/images/monthly.png" alt="Monthly" />
-<img src="/jekyll-uno/images/daily.png" alt="Daily" />
+
+<figure>
+<img src="/jekyll-uno/images/monthly.png" align="middle" />
+</figure>
+<p>We can see some activity peaks in the monthly tweets count.</p>
+
+<p><img src="/jekyll-uno/images/daily.png" alt="Daily" />
 <img src="/jekyll-uno/images/hourly.png" alt="Hourly" /></p>
 
+<p>We count the tweets monthly and aggregate at the last of the month where we have tweets. Here we can see the 10 busiest months for the trolls before, during and after the compaign.</p>
 <div style="clear: right;">
-    <p style="float: right;"><img src="/jekyll-uno/images/1.jpg" border="1px" /></p>
-    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p style="float: right;"><img src="/jekyll-uno/images/2.jpg" border="1px" /></p>
+    <p>Before the compaign: The tweets activity during the month where Donald Trump announced his candidcay (June 2015) was by far the most intense in the precompaign period. This can be an indicator that the Russians were enthousiatics about his compaign from the early days. Before the middle of 2015, there was little activity. We can't be conclusive here because we do not have all logs of all the IRA activity but it seems that the US 2016 elections was the first important target in the US for the IRA</p>
 </div>
 
 <div style="clear: right;">
-    <p style="float: right;"><img src="/jekyll-uno/images/2.jpg" border="1px" /></p>
-    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p style="float: right;"><img src="/jekyll-uno/images/1.jpg" border="1px" /></p>
+    <p>During the compaign: We can see a surge in the tweets in September and October 2016 corresponding to the months preceding the presidential elections. When we looked closely to the data, we've seen that particularly on October 6th and 7th, the frequency is very high. This can be probably explained by the second presdidential debate on the October 9th. In the same sense, there is an increase (although less important) on October 19th for the 3rd presidential debate.</p>
 </div>
 
 <div style="clear: right;">
     <p style="float: right;"><img src="/jekyll-uno/images/0.jpg" border="1px" /></p>
-    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p> August 2017 is the trolls favorite. We can see that the spike in tweets from August 12 to August 18 2016. This can be explained by the fact that at the 12th a white supremacist rally occured and was followed by a peacefull protests in CharlottesVille Viriginia. A car crashed into the protestors killing one and injuring 28. This incident was intensely covered by the US media and stayed in the spotlight for a while especially after the famous comment tweeted by Trump: “You had some very bad people in that group. But you also had people that were very fine people, on both sides.” We will focus more on this month in the following section</p>
 </div>
+<p><a href="https://en.wikipedia.org/wiki/Charlottesville_car_attack">Charlottesville car attack</a></p>
 
 <p><img src="/jekyll-uno/images/different.png" alt="Different" /></p>
 
@@ -348,9 +379,23 @@ Unknown           7261</p>
 
 <p><img src="/jekyll-uno/images/leftright.png" alt="Leftright" /></p>
 
+<p>Overall, the number of tweets by right trolls is larger than the left trolls. The difference grows to almost the double after the elections. The idea here is that left trolls will divide the left and liberal agenda and to some extent give ways for the conservative and right agenda to prevail. It’s also an effective way to polarize the American society, increase stigma and make people focus on what divides them. After the compaign, this is not anymore the objective. the goal becomes how to better defend the president-elect and discredit his critics.</p>
+
 <h2 id="topic-extraction">Topic Extraction</h2>
 
-<p><img src="/jekyll-uno/images/coherence.png" alt="Coherence" /></p>
+<p>To extract the topics that the trolls are targetting, we used Latent Dirichlet Allocation (LDA) and iterated multiple times with different number of topics. Since this is an unsupervised learning algorithm, it is harder to automatically evaluate the topics we get. as a first measure, we used the coherence score to choose an optimal number of topics. Each topic is generated by a list of words and the coherence score give a pairwise word-similarity score. The resulted score is the aggregate of all scores of the correspondings list of words.</p>
+
+<p><img src="/jekyll-uno/images/coherence.png" alt="Coherence [1]" /></p>
+
+<p>t : Topics coming in from the topic model<br />
+S : Segmented topics<br />
+P : Calculated probabilities<br />
+Phi vector : A vector of the “confirmed measures” coming out from the confirmation module<br />
+c : The final coherence value</p>
+
+<p>We used pyLDAvis [2] to visualize the topics for different periods and datasets.
+pyLDAvis is a interactive LDA visualization python package. What my results look like? I took one screenshot of pyLDAvis result as shown in Figure 1. The area of circle represents the importance of each topic over the entire corpus, the distance between the center of circles indicate the similarity between topics. For each topic, the histogram on the right side listed the top 30 most relevant terms.
+You can choose between 3 different periods: before, during and after the presidential compaign for both Russian trolls and Iranians trolls. We also included the topics for the general public twitter dataset during August 2017.</p>
 
 <p><select id="list">
   <option value="0">Before compaign Russian right trolls</option>
@@ -368,21 +413,23 @@ Unknown           7261</p>
   <option value="12">General public August 2017</option>
 </select></p>
 
-<iframe src="/jekyll-uno/lda_beforecompaign_righttroll_russia.html" height="900px" width="1200px" id="0" style="display: : block;"></iframe>
-<iframe src="/jekyll-uno/lda_before_campain_left_russia.html" height="900px" width="1200px" id="1" style="display:none;"></iframe>
-<iframe src="/jekyll-uno/lda_before_campain_all_russia.html" height="900px" width="1200px" id="2" style="display:none;"></iframe>
+<iframe src="/jekyll-uno/lda_beforecompaign_righttroll_russia.html" height="900px" width="1220px" id="0" style="display: : block;"></iframe>
+<iframe src="/jekyll-uno/lda_before_campain_left_russia.html" height="900px" width="1220px" id="1" style="display:none;"></iframe>
+<iframe src="/jekyll-uno/lda_before_campain_all_russia.html" height="900px" width="1220px" id="2" style="display:none;"></iframe>
 
-<iframe src="/jekyll-uno/lda_after_campain_right_russia.html" height="900px" width="1200px" id="3" style="display:none;"></iframe>
-<iframe src="/jekyll-uno/lda_after_campain_left_russia.html" height="900px" width="1200px" id="4" style="display:none;"></iframe>
-<iframe src="/jekyll-uno/lda_after_campain_all_russia.html" height="900px" width="1200px" id="5" style="display:none;"></iframe>
+<iframe src="/jekyll-uno/lda_after_campain_right_russia.html" height="900px" width="1220px" id="3" style="display:none;"></iframe>
+<iframe src="/jekyll-uno/lda_after_campain_left_russia.html" height="900px" width="1220px" id="4" style="display:none;"></iframe>
+<iframe src="/jekyll-uno/lda_after_campain_all_russia.html" height="900px" width="1220px" id="5" style="display:none;"></iframe>
 
-<iframe src="/jekyll-uno/lda_during_campain_right_russia.html" height="900px" width="1200px" id="6" style="display:none;"></iframe>
-<iframe src="/jekyll-uno/lda_during_campain_left_russia.html" height="900px" width="1200px" id="7" style="display:none;"></iframe>
-<iframe src="/jekyll-uno/lda_during_campain_all_russia.html" height="900px" width="1200px" id="8" style="display:none;"></iframe>
+<iframe src="/jekyll-uno/lda_during_campain_right_russia.html" height="900px" width="1220px" id="6" style="display:none;"></iframe>
+<iframe src="/jekyll-uno/lda_during_campain_left_russia.html" height="900px" width="1220px" id="7" style="display:none;"></iframe>
+<iframe src="/jekyll-uno/lda_during_campain_all_russia.html" height="900px" width="1220px" id="8" style="display:none;"></iframe>
 
-<iframe src="/jekyll-uno/lda_iran_before.html" height="900px" width="1200px" id="9" style="display:none;"></iframe>
-<iframe src="/jekyll-uno/lda_iran_during.html" height="900px" width="1200px" id="10" style="display:none;"></iframe>
-<iframe src="/jekyll-uno/lda_iran_after.html" height="900px" width="1200px" id="11" style="display:none;"></iframe>
+<iframe src="/jekyll-uno/lda_iran_before.html" height="900px" width="1220px" id="9" style="display:none;"></iframe>
+<iframe src="/jekyll-uno/lda_iran_during.html" height="900px" width="1220px" id="10" style="display:none;"></iframe>
+<iframe src="/jekyll-uno/lda_iran_after.html" height="900px" width="1220px" id="11" style="display:none;"></iframe>
+
+<iframe src="/jekyll-uno/lda_general_public.html" height="900px" width="1220px" id="12" style="display:none;"></iframe>
 
 <script type="text/javascript">
  /* var hidden = false;
@@ -415,31 +462,73 @@ Unknown           7261</p>
   document.getElementById("list").addEventListener("change",listQ);
 </script>
 
-<p><img src="/jekyll-uno/images/keywords.png" alt="Matching" /></p>
+<p><img src="/jekyll-uno/images/keywords.png" alt="Matching" /><br />
+Based on the keywords of each topic, we can manually extract the topic based on prior knowledge about the subject or by simply by googling.</p>
 
-<p><a href="http://www.themedialine.org/featured/slutwalk-through-the-holy-city/">Media on terrorism </a>
-<a href="https://www.independent.co.uk/news/world/americas/malala-in-america-young-activist-visits-congress-in-capitol-hill-to-urge-more-education-funding-for-10342722.html">Malala in America</a>
-<a href="http://en.farsnews.com/newstext.aspx?nn=13940327001517">Yemen Missile Attacks</a>
-<a href="https://edition.cnn.com/2015/06/26/world/kuwait-mosque-attack/index.html">Bomb Kuwait</a>
-<a href="https://www.timesofisrael.com/kerry-too-early-to-tell-if-iran-nuclear-deal-will-be-sealed/">Nuclear deal with Iran</a>
+<p><a href="http://www.themedialine.org/featured/slutwalk-through-the-holy-city/">Media on terrorism </a>,
+<a href="https://www.independent.co.uk/news/world/americas/malala-in-america-young-activist-visits-congress-in-capitol-hill-to-urge-more-education-funding-for-10342722.html">Malala in America</a>,
+<a href="http://en.farsnews.com/newstext.aspx?nn=13940327001517">Yemen Missile Attacks</a>,
+<a href="https://edition.cnn.com/2015/06/26/world/kuwait-mosque-attack/index.html">Bomb Kuwait</a>,
+<a href="https://www.timesofisrael.com/kerry-too-early-to-tell-if-iran-nuclear-deal-will-be-sealed/">Nuclear deal with Iran</a>,
 <a href="http://en.farsnews.com/newstext.aspx?nn=13940325000360">Ramadam</a></p>
 
-<p><img src="/jekyll-uno/images/russiaword2vec.jpeg" alt="Flowers in Chania" style="width:800px;height:400px;" />
-<img src="/jekyll-uno/images/russiaword2vec.jpeg" alt="russia" />
+<iframe src="/jekyll-uno/before_campaign_comparison_russia.html" height="1800px" width="900px" style="display:block"></iframe>
+
+<p>In the first part of the analysis we would like to adress the following questions:</p>
+
+<p>Are the topics for the left and the right tweets meaningful?<br />
+Are the topics for the left and the right tweets similar or do they are different?<br />
+Do we extract more information by analyzing the left and right tweets all together?<br />
+In order to do so we are going to create a dataframe containing the keywords for the right, left and all together toll’s tweets in the three different time periods, which are before, during and after the campaign.</p>
+
+<p>For what we refer to as “before campain” period, right and left tweets topic analysis shows a nice picture of the principle events of June 2015. They are therefore very meaningful by themselves. If one look at right and left trolls separately, some interesting evaluation can be done.<br />
+ First of all the number of topics covered by the right trolls is longer than the one of the left. More so, in terms of political themes, the right trolls are more active, in particular Obama is highly cited from the left and the right trolls. Several political topics are covered. For example the coalition between Barack Obama and Hillary Clinton both right trolls, in topic 34, and the left trolls, in topic 27. (as described in the following article <a href="https://www.bostonglobe.com/metro/2015/06/26/unity-obama-clinton-bond-was-born/ytbkcLJhmdMZxoS0F1GCLP/story.html">Democrats together</a>. Also the Asia trade deal, topic 1 for right trolls <a href="http://time.com/3908381/barack-obama-china-trans-pacific-partnership/">Asia trade deal</a> e.g. in the tweet “ObamaRyanTrade Defenses This write trade rules China” or for the same-sex marriage <a href="https://www.latimes.com/nation/la-na-gay-marriage-ruling-supreme-court-live-htmlstory.html">LGBTQ rights</a> in topic (3) of right trolls. Obama appears for the left troll in topic 3 e.g. in the tweet “York Times release President Obama College Transcripts fooled they blew Rubio traffic tickets”. Also Michelle Obama is cited by right trolls in topic 6, as in the tweet “TopVideo there make happen Michelle Obama graduates” <a href="http://time.com/3915678/michelle-obama-commencement-chicago/">Michelle Obama commencement speech</a>.</p>
+
+<p>Very interestingly Trump is cited only by the right trolls in topic 25 (e.g. in the tweet “Trump Obama MANY Decisions Anybody That Incompetent Intentional Degradation tcot).</p>
+
+<p>Topics related to the news of that period are also covered, for example tha case of Charleston shooter Dylann Roof cited by right trolls <a href="https://www.dailymail.co.uk/news/article-3132670/Dylann-Roof-manifesto-Killer-unveils-Charleston-target-church-massacre-calls-black-people-stupid-violent-complains-s-no-real-KKK-help-him.html">Charleston shooting</a> or the Detroit pastor charged with killing transgender woman again cited by the right trolls <a href="https://www.metrotimes.com/news-hits/archives/2018/12/13/detroit-pastor-charged-with-killing-transgender-woman?utm_source=widget&amp;utm_medium=articleblog&amp;utm_campaign=rightrail&amp;utm_content=MorebyThisAuthor">Pastor indicted for murder</a> in topic 21. From the left trolls side, we can see the citation of the event related to the family member charged with pregnant teen’s beating, forced abortion in topic 0 <a href="https://www.nydailynews.com/news/national/dallas-family-member-charged-teen-forced-abortion-article-1.2245353">Teen abortion</a> and the McKinney video in topic 16 <a href="https://www.bbc.com/news/world-us-canada-33059484">McKinney</a></p>
+
+<p>Several other topics can be also found, for example both right and left trolls commented on apple: the right trolls considered Apple investiments (“Spotify gets investment faces competition from Apple business,United States,English”) while left trolls commented on Apple events (“Apple biggest event year later already heard lots about what happening”). Finally also a comment about Florida city bans <a href="https://www.businessinsider.com/r-to-control-spring-break-florida-city-bans-beach-drinking-2015-6?r=US&amp;IR=T">Florida officials ban drinking on the beach</a> by the right trolls.</p>
+
+<p>Finally we could evaluate that considering all the trolls together did not add any new information as expected.</p>
+
+<iframe src="/jekyll-uno/during_campaign_comparison_russia.html" height="2300px" width="900px" style="display:block"></iframe>
+
+<p>In the period during the campaign, the topics related to Trump are more frequent with respect to the previous analysis. Right and Left trolls commented on different events related to Trump, for example if one look at the right trolls it is possible to find themes related to the the Trump and Pence relationship (topic 0 <a href="https://www.vanityfair.com/news/2016/10/donald-trump-mike-pence-relationship">Trump and Pence</a>, the presidential election (topic 7), the final Trump-Clinton debate (topic 26) <a href="https://www.washingtonpost.com/news/the-fix/wp/2016/10/19/the-final-trump-clinton-debate-transcript-annotated/?utm_term=.c324deb47353">Final presidential debate</a>, Donald Trump travel to Gettysburg <a href="https://www.politico.com/story/2016/10/donald-trump-gettysburg-230188">Trump in Gettyburg</a> and many others. On the other hand left trolls have only two topics related to Trump, one that we found also in right trolls topic, which is the final Trump-Clinton debate (topic 6). It is therefore clear the highest attention of the right trolls on the figure of Trump.<br />
+The rest of left trolls topics are really sparse: some are related to movies (e.g. topic 13), others to magazine and gossip (e.g. in topic 35) etc. 
+Obama is still a commented topic but less frequent with respect to the period before the campaign.</p>
+
+<p>Hillary Clinton is also reported, as in topic 3 of right trolls where the possibility that WikiLeaks was working with Russian state actors seeking to elect Donald Trump is commented.</p>
+
+<p>Also in this case the topics for each troll categories are clear and there are some overalap, for example in the case of Trump. However clear differences can be found between the right and left trolls, for example in the frequency of the evaluation of some topics and in the fact that again the right trolls tweets seem more related to the politic field.</p>
+
+<p>Again, considering all trolls together did not add a lot to the analysis.</p>
+
+<iframe src="/jekyll-uno/images/russiaword2vec.jpeg" height="450px" width="1050px" id="2" style="display:block;"></iframe>
+<p><img src="/jekyll-uno/images/russiaword2vec.jpeg" alt="russia" />
 <img src="/jekyll-uno/images/iranword2vec.png" alt="iran" /></p>
 
-<p><img src="/jekyll-uno/images/iran_simple.png" alt="iran" />
+<p><img src="/jekyll-uno/images/iran_simple.png" alt="iran" /><br />
 The wordcloud above highlights the most ocurring words in the Iranian trolls dataset. We can see that the the subjects are mostly regional such as the Israeli-Iranian tension, Saudi Arabia and the conflict in Yemen, Syria and isis, Turkey and Russia for their direct influence over the situation in Syria and of course the United States through Trump and Obama. The Iranians’ troll focus is narrow and focalizes on matters that are closely related to Iran’s interests.
-<img src="/jekyll-uno/images/rus_simple.png" alt="russia" />
+<img src="/jekyll-uno/images/rus_simple.png" alt="russia" /><br />
 On the other hand, the Russians trolls dataset shows a wider spectrum of subjects such as US politics (Trump, Obama, Clinton), sports, news, buisness.</p>
 
 <p>Comparing both wordclouds shows that the Russian operation is much more sohisticated than the Iranian operation in the sense that trolls tried to blend in the public and seem more casual by tweeting about apolitical topics whereas the Iranian trolls seem more robotic and more straightforward.</p>
 
 <h2 id="right-vs-left-trolls">Right vs Left trolls</h2>
+<p>As we have said, only the first Russian data is labeled to different categories. It’s interesting to see the distribution of the left and right trolls for unlabeled data. The idea is to build a classifier using the Russian trolls labeled account categories and then classify the second Russian dataset into right troll, left troll and other classes. Althought when testing the model over unseen labeled data, we get a pretty good accuracy (89%), it’s hard to estimate the model’s performance on unlabeled data. Usually the hashtags give a good idea about the political affiliation of the tweet sender. We therefore mapped hashtags to the three classes neglecting noisy hahshtags that are ironic or covered by the context. We then used this noisy labeling to evaluate the performance of the model. We only get 60.3% of accurate classification.</p>
+
+<p>We also wanted to run the classifier on the Iran trolls dataset but we noticed that the overlap between the hashtags is small and the noisy labeling we did doesn’t work in this situation. We can see the below the most popular hashtags in both the second Russian trolls dataset and the Iranian trolls dataset.
+<img src="/jekyll-uno/images/russian_hashtags.png" alt="russia" />
+<img src="/jekyll-uno/images/iran_hashtags.png" alt="iran" /></p>
 
 <h2 id="references">References</h2>
 
-<p><a href="http://127.0.0.1:4444/jekyll-uno/2016/welcome-to-jekyll/">I’m an inline-style link</a></p>
+<p>[1] <a href="http://svn.aksw.org/papers/2015/WSDM_Topic_Evaluation/public.pdf">Coherence score</a><br />
+[2] <a href="https://pyldavis.readthedocs.io/en/latest/readme.html">pyLDAvis</a><br />
+[3] <a href="https://github.com/joshgerdes/jekyll-uno">Theme</a><br />
+[4] <a href="https://github.com/asaadal/ADA-project">Code repository</a></p>
+
 
   </section>
   
@@ -455,7 +544,7 @@ On the other hand, the Russians trolls dataset shows a wider spectrum of subject
 </footer>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="/jekyll-uno/js/main.js?1544976908244467000"></script>
+<script type="text/javascript" src="/jekyll-uno/js/main.js?1544991842164869000"></script>
 
 
     </div>
